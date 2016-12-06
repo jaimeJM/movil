@@ -1,0 +1,136 @@
+	 <div data-role="header">
+	 	<h1>Crea tu Presupuesto</h1>
+        <div class ="navegacion"></div>
+
+	 </div>	
+
+	 <div role="main" class="ui-content">
+	 	<form>
+	 		<h3 class="ui-bar ui-bar-a">Personaliza los Parámetros</h3>
+	 		<div class="ui-body"> 
+	 			<label for="paginas">Paginas <small>Selecciona el numero de paguinas que realizaras</small></label>
+	 			                     <input type="range" name="paginas" id="paginas" data-highlight="true" min="0" max="100" value="1">
+	 			<label for="temas">Temas <small>Selecciona el numero de temas que realizaras</small></label>
+	 			                     <input type="range" name="temas" id="temas" data-highlight="true" min="0" max="100" value="1">
+	 			                    <fieldset data-mini="true" data-role="controlgroup" data-type="horizontal">
+	 				        			<legend>Complegidad <small id="Complegidad-descripcion"> </small></legend>
+	 				        
+	 				<input type="radio" name="Complegidad" id="c-personal" value="personal" checked="checked" data-descripcion=" descripcion 1">
+	 				        <label for="c-personal">Personal</label>
+	 				        
+	 				<input type="radio" name="Complegidad" id="c-estandar" value="estandar" data-descripcion=" descripcion 1">
+	 				        <label for="c-estandar">Estandar</label>
+	 				        
+	 				<input type="radio" name="Complegidad" id="c-avanzado" value="avanzado" data-descripcion=" descripcion 2">
+	 				        <label for="c-avanzado">Avanzado</label>
+
+	 				<input type="radio" name="Complegidad" id="c-deluxe" value="deluxe" data-descripcion=" descripcion 3">
+	 				        <label for="c-deluxe">Deluxe</label>
+
+	 				<input type="radio" name="Complegidad" id="c-profecional" value="profecional" data-descripcion=" descripcion 4">
+	 				        <label for="c-profecional">Profecional</label>
+
+	 				<input type="radio" name="Complegidad" id="c-empresarial" value="empresarial" data-descripcion=" descripcion 6">
+	 				        <label for="c-empresarial">Empresarial</label>
+
+	 			     				</fieldset>
+
+	 			<label for="paginas">Email <small>Selecciona la cantida de email a configurar</small></label>
+	 			                     <input type="range" name="email" id="email" data-highlight="true" min="0" max="100" value="1">
+	 			                    
+	 			<fieldset data-mini="true" data-role="controlgroup" data-type="horizontal">
+	 				        <legend>Opciones <small>Selecionas lo que desees </small></legend>
+	 				        
+	 				<input value="logo" type="checkbox" name="opciones" id="o-logo" >
+	 				        <label for="o-logo">Logo</label>
+
+	 				        <input value="feed" type="checkbox" name="opciones" id="o-feed">
+	 				        <label for="o-feed">Feed RSS</label>
+
+	 				        <input value="resp" type="checkbox" name="opciones" id="o-resp">
+	 				        <label for="o-resp">Responsive</label>
+
+	 				<input value="busqueda" type="checkbox" name="opciones" id="o-busqueda">
+	 				        <label for="o-busqueda">Busqueda</label>
+
+	 				<input value="opciones" type="checkbox" name="opciones" id="o-opciones">
+	 				        <label for="o-opciones">Carga de Archivos</label>
+	 			    </fieldset>
+
+
+	 			<fieldset data-mini="true" data-role="controlgroup" data-type="horizontal">
+	 				        <legend>Social <small>Incrementa la cantidad de tus visitas </small></legend>
+	 				        
+	 				<input value="face" type="checkbox" name="social" id="s-face" >
+	 				        <label for="s-face">facebook</label>
+
+	 				        <input value="twi" type="checkbox" name="social" id="s-twi">
+	 				        <label for="s-twi">Twiter</label>
+
+	 				        <input value="blog" type="checkbox" name="social" id="s-blog">
+	 				        <label for="s-blog">Blog</label>
+
+	 				<input value="youtobe" type="checkbox" name="social" id="s-youtube">
+	 				        <label for="s-youtube">You to be</label>
+
+	 				<input value="otro" type="checkbox" name="social" id="s-otro">
+	 				        <label for="s-otro">Otros</label>
+	 			</fieldset>
+
+
+	 			<fieldset data-mini="true" data-role="controlgroup" data-type="horizontal">
+	 				        <legend>Fotos <small>Muestra fotos </small></legend>
+	 				        
+	 				<input value="galeria" type="checkbox" name="fotos" id="f-gale" >
+	 				        <label for="f-gale">Galeria</label>
+
+	 				        <input value="slider" type="checkbox" name="fotos" id="f-slider">
+	 				        <label for="f-slider">Slider</label>
+
+	 				        <input value="gestion" type="checkbox" name="fotos" id="f-gestion">
+	 				        <label for="f-gestion">Gestion de Imagenes</label>
+
+	 				<input value="flickr" type="checkbox" name="fotos" id="f-flickr">
+	 				        <label for="f-flickr">Flickr</label>
+
+	 				<input value="otro" type="checkbox" name="fotos" id="f-otro">
+	 				        <label for="f-otro">Otra Integracion</label>
+	 			</fieldset>
+
+	 			<fieldset data-mini="true" data-role="controlgroup" data-type="horizontal">
+	 				        <legend>Modulos <small>Contenido y secciones dinamicas </small></legend>
+	 				        
+	 				<input value="login" type="checkbox" name="modulos" id="m-login" >
+	 				        <label for="m-login">Login</label>
+
+	 				        <input value="usuario" type="checkbox" name="modulos" id="m-usuario">
+	 				        <label for="m-usuario">Prefil de Usuario</label>
+
+	 				        <input value="productos" type="checkbox" name="modulos" id="m-produc">
+	 				        <label for="m-produc">Productos</label>
+
+	 				<input value="paginas" type="checkbox" name="modulos" id="m-paginas">
+	 				        <label for="m-paginas">Paginas Editables</label>
+
+	 				<input value="come" type="checkbox" name="modulos" id="m-come">
+	 				        <label for="m-come">comentarios</label>
+	 			</fieldset>
+
+
+	 			<div style="margin-top: 2em">
+	 				<label for="text-1">Total Bs.</label>
+	 				<input class="text-total" type="text" name="total" id="total" value="12000.00" disabled="disabled">
+	 			</div>
+
+
+	 			<input type="email" data-clear-btn="false" name="envio-email" id="envio-email" placeholder="Correo@gmai.com">
+	 			<a href="#" class="ui-btn ui-btn-inline ui-icon-mail ui-btn-icon-bottom">Enviar</a>
+
+	 			<input type="text" data-clear-btn="true" name="guardar" id="guardar" placeholder="Nonmbres y Apellidos" required="required">
+	 			<a href="#" class="ui-btn ui-btn-inline ui-icon-check ui-btn-icon-left">Guardar</a>
+
+
+	 		</div>
+	 	</div>
+	 </form>
+	</div>
